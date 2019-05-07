@@ -174,6 +174,9 @@ public class ArticleListFragment extends Fragment implements ArticleAdapter.OnAr
     }
 
 
+    /**
+     * Method to initialize the recyclerview and its components.
+     */
     public void setUpRecyclerView(List<Article> mArticleList) {
 
         GridLayoutManager articleGridLayoutManager = new GridLayoutManager(getActivity(), 1);

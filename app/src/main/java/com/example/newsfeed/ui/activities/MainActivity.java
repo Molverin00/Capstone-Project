@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -17,6 +18,9 @@ import com.example.newsfeed.util.MyApp;
 import com.example.newsfeed.viewModel.MainViewModel;
 import com.example.newsfeed.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -26,11 +30,16 @@ public class MainActivity extends AppCompatActivity {
     private FragmentManager fragmentManager;
     private FragmentTransaction fragmentTransaction;
 
+    @BindView(R.id.my_toolbar) Toolbar myToolbar;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
+
+        setSupportActionBar(myToolbar);
 
         mainViewModel = ViewModelProviders.of(this).get(MainViewModel.class);
 
@@ -94,7 +103,9 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-
+    /**
+     * Method to go back to the Login Activity.
+     */
     public void navigateToLogin() {
         Intent intent = new Intent(MainActivity.this, LoginActivity.class);
         startActivity(intent);

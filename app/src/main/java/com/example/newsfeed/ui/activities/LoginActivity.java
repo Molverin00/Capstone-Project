@@ -69,19 +69,23 @@ public class LoginActivity extends AppCompatActivity {
         });
 
 
-        signUpButton.setOnClickListener(v -> {
-            navigateToSignUp();
-        });
+        signUpButton.setOnClickListener(v ->
+                navigateToSignUp());
 
     }
 
-
+    /**
+     * Method to go to the SignUp screen to create a new user.
+     */
     public void navigateToSignUp() {
         Intent intent = new Intent(LoginActivity.this, SignUpActivity.class);
         startActivity(intent);
     }
 
 
+    /**
+     * Method to go to the Main Activity.
+     */
     public void navigateToMain() {
         Intent intent = new Intent(LoginActivity.this, MainActivity.class);
         startActivity(intent);

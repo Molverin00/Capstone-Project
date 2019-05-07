@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -36,6 +37,9 @@ public class ArticleDetailsActivity extends AppCompatActivity {
     @BindView(R.id.tv_publish_date) TextView publishDateTextView;
     @BindView(R.id.floatingActionButton) FloatingActionButton fab;
 
+    @BindView(R.id.my_toolbar) Toolbar myToolbar;
+
+
 
 
 
@@ -44,6 +48,8 @@ public class ArticleDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_details);
         ButterKnife.bind(this);
+
+        setSupportActionBar(myToolbar);
 
         if (getActionBar() != null) {
             getActionBar().setDisplayHomeAsUpEnabled(true);

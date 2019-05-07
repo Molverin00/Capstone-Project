@@ -37,7 +37,7 @@ public class NewsFeedWidget extends AppWidgetProvider {
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
         RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.news_feed_widget);
 
-        views.setTextViewText(R.id.widget_articles, "Check Latest news");
+        views.setTextViewText(R.id.widget_articles, context.getString(R.string.widget_text));
 
         views.setOnClickPendingIntent(R.id.article_linear_layout, pendingIntent);
         appWidgetManager.updateAppWidget(appWidgetId, views);
