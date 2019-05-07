@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">NewsFeed</string>
+    <string name="password_hint">password</string>
+    <string name="email_hint">email</string>
+    <string name="login_label">Login</string>
+    <string name="sign_up_label">Sign Up</string>
+    <string name="confirm_password_hint">confirm password</string>
+    <string name="top_headlines_label">Top Headlines</string>
+
+
+    <string name="logout_label">Logout</string>
+    <string name="bookmark_label">My bookmarks</string>
+    <string name="refresh_label">Refresh</string>
+    <string name="article_image_content_description">Article image</string>
+    <string name="publish_date_default_placeholder">2019–05–01 12:30</string>
+    <string name="source_placeholder">Source</string>
+    <string name="article_title_placeholder">Article Title</string>
+    <string name="author_placeholder">by Author</string>
+    <string name="app_logo_content_description">Application logo</string>
+    <string name="appwidget_text">EXAMPLE</string>
+    <string name="add_widget">Add widget</string>
+    <string name="description_placeholder">description</string>
+    <string name="content_placeholder">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+</resources>

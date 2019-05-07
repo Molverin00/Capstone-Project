@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_refresh"
+        android:title="@string/refresh_label"
+        android:icon="@drawable/ic_refresh_black_24dp"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_top_headlines"
+        android:title="@string/top_headlines_label"
+        android:icon="@drawable/ic_stars_black_24dp"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_bookmarks"
+        android:title="@string/bookmark_label"
+        android:icon="@drawable/ic_bookmark_black_24dp"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_logout"
+        android:title="@string/logout_label"
+        android:icon="@drawable/ic_exit_to_app_black_24dp"
+        app:showAsAction="never"/>
+</menu>
